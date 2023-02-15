@@ -1,0 +1,53 @@
+:root{
+    --size: 16;
+    --color: aliceblue;
+    --border-color: rgb(195, 197, 207);
+}
+
+html,body{
+    background-color: rgb(214, 180, 164);
+    
+}
+
+html {
+    box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+.wrapper{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+}
+.main{
+    background-color: aliceblue;
+    height:  60%;
+    width: 30%;
+    display: grid;
+    grid-template-columns: repeat(var(--size), 1fr);
+    grid-template-rows: repeat(var(--size), 1fr);
+}
+.settings{
+    background-color: aliceblue;
+    height: 60%;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+}
+.div-color{
+    border: 0.5px solid;
+    background-color: var(--color);
+    border-color: var(--border-color);
+}
+.size-slider{
+    width: 100%;
+}
+
